@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:cached_network_image/cached_network_image.dart';
+import 'package:thansira_travels/core/theme/colors.dart';
+import 'package:thansira_travels/core/theme/text_styles.dart';
+import 'package:thansira_travels/core/theme/constants.dart';
 // Function to Build Each Place Card
 
 Widget buildPlaceCard(
@@ -36,16 +38,30 @@ Widget buildPlaceCard(
         /// Background Image
         ClipRRect(
           borderRadius: BorderRadius.circular(12),
-          child: CachedNetworkImage(
-            imageUrl: place["image"]!,
-            width: double.infinity,
-            height: MediaQuery.of(context).size.height / 1.5,
-            //width: MediaQuery.of(context).size.width / 5,
-            fit: BoxFit.fill,
-            placeholder:
-                (context, url) =>
-                    const Center(child: CircularProgressIndicator()),
-            errorWidget: (context, url, error) => const Icon(Icons.error),
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(10),
+            child: Image.network(
+              place["image"]!,
+              width: double.infinity,
+              height: MediaQuery.of(context).size.height / 1.5,
+              fit: BoxFit.cover,
+              loadingBuilder: (context, child, loadingProgress) {
+                if (loadingProgress == null) return child;
+                return Container(
+                  color: Colors.grey[300],
+                  child: const Center(child: CircularProgressIndicator()),
+                );
+              },
+              errorBuilder: (context, error, stackTrace) {
+                print("Error loading image: $error");
+                return Container(
+                  color: Colors.grey[300],
+                  child: const Center(
+                    child: Icon(Icons.error, color: Colors.red, size: 50),
+                  ),
+                );
+              },
+            ),
           ),
         ),
 

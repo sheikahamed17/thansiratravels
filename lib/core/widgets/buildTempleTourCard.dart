@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:cached_network_image/cached_network_image.dart';
-
-import '../theme/colors.dart';
+import 'package:thansira_travels/core/theme/colors.dart';
+import 'package:thansira_travels/core/theme/text_styles.dart';
+import 'package:thansira_travels/core/theme/constants.dart';
 
 Widget buildTempleTourCard(Map<String, String> temple) {
   return Card(
@@ -14,14 +14,29 @@ Widget buildTempleTourCard(Map<String, String> temple) {
         Expanded(
           child: ClipRRect(
             borderRadius: const BorderRadius.vertical(top: Radius.circular(12)),
-            child: CachedNetworkImage(
-              imageUrl: temple['image']!,
-              fit: BoxFit.cover,
-              width: double.infinity,
-              placeholder:
-                  (context, url) =>
-                      const Center(child: CircularProgressIndicator()),
-              errorWidget: (context, url, error) => const Icon(Icons.error),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(10),
+              child: Image.network(
+                temple['image']!,
+                fit: BoxFit.cover,
+                width: double.infinity,
+                loadingBuilder: (context, child, loadingProgress) {
+                  if (loadingProgress == null) return child;
+                  return Container(
+                    color: Colors.grey[300],
+                    child: const Center(child: CircularProgressIndicator()),
+                  );
+                },
+                errorBuilder: (context, error, stackTrace) {
+                  print("Error loading image: $error");
+                  return Container(
+                    color: Colors.grey[300],
+                    child: const Center(
+                      child: Icon(Icons.error, color: Colors.red, size: 50),
+                    ),
+                  );
+                },
+              ),
             ),
           ),
         ),

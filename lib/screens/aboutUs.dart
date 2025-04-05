@@ -8,7 +8,6 @@ import 'package:thansira_travels/screens/homepage.dart';
 import 'package:thansira_travels/screens/contactUs.dart';
 import 'package:url_launcher/url_launcher.dart'
     show LaunchMode, canLaunchUrl, launchUrl;
-import 'package:cached_network_image/cached_network_image.dart';
 
 class Aboutus extends StatefulWidget {
   const Aboutus({super.key});
@@ -144,8 +143,8 @@ class _AboutusState extends State<Aboutus> with SingleTickerProviderStateMixin {
                   height: 300,
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: CachedNetworkImageProvider(
-                        'assets/images/TNtour.webp',
+                      image: NetworkImage(
+                        "https://firebasestorage.googleapis.com/v0/b/fitadvisor-flutter.appspot.com/o/collegeTour.webp?alt=media&token=674a2539-dbc0-41b2-8e10-fc68925e3f0b",
                       ),
                       fit: BoxFit.cover,
                     ),

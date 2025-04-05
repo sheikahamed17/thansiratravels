@@ -11,7 +11,6 @@ import 'package:url_launcher/url_launcher.dart'
 import 'package:thansira_travels/screens/aboutUs.dart';
 import 'package:thansira_travels/screens/contactUs.dart';
 import 'package:thansira_travels/screens/studentTour.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 
 import '../core/theme/colors.dart';
 import '../core/widgets/buildPlaceCard.dart';
@@ -28,7 +27,7 @@ class _HomePageState extends State<HomePage>
     with SingleTickerProviderStateMixin {
   final List<Map<String, String>> destinations = [
     {
-      "image": "assets/images/collegeTour.jpg",
+      "image": "assets/images/collegeTour.webp",
       "title":
           "Explore, learn, and create memories with our South Indian college and school tour packages!",
     },
@@ -650,13 +649,25 @@ class _HomePageState extends State<HomePage>
               child: ClipRRect(
                 clipBehavior: Clip.antiAliasWithSaveLayer,
                 borderRadius: BorderRadius.circular(0),
-                child: CachedNetworkImage(
-                  imageUrl: destination["image"]!,
+                child: Image.network(
+                  destination["image"]!,
                   fit: BoxFit.fill,
-                  placeholder:
-                      (context, url) =>
-                          const Center(child: CircularProgressIndicator()),
-                  errorWidget: (context, url, error) => const Icon(Icons.error),
+                  loadingBuilder: (context, child, loadingProgress) {
+                    if (loadingProgress == null) return child;
+                    return Container(
+                      color: Colors.grey[300],
+                      child: const Center(child: CircularProgressIndicator()),
+                    );
+                  },
+                  errorBuilder: (context, error, stackTrace) {
+                    print("Error loading image: $error");
+                    return Container(
+                      color: Colors.grey[300],
+                      child: const Center(
+                        child: Icon(Icons.error, color: Colors.red, size: 50),
+                      ),
+                    );
+                  },
                 ),
               ),
             ),
