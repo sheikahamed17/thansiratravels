@@ -50,7 +50,7 @@ class _HomePageState extends State<HomePage>
           "Ooty's beauty lies in its tranquility, where the hills kiss the sky and nature whispers in your ears.",
     },
     {
-      "image": "assets/images/madurai.jpeg",
+      "image": "assets/images/madurai.jpg",
       "title": "Madurai",
       "description":
           "Madurai, where the past meets the present in a symphony of faith, culture, and history.",
