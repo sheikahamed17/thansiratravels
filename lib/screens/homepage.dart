@@ -28,7 +28,7 @@ class _HomePageState extends State<HomePage>
     with SingleTickerProviderStateMixin {
   final List<Map<String, String>> destinations = [
     {
-      "image": "assets/images/collegeTour.webp",
+      "image": "assets/images/collegeTour.jpg",
       "title":
           "Explore, learn, and create memories with our South Indian college and school tour packages!",
     },
