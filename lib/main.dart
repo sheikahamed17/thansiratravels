@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:thansira_travels/screens/homepage.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const ThansiraTravels());
 }
 
@@ -13,8 +15,15 @@ class ThansiraTravels extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Thansira Travels",
-      theme: ThemeData(fontFamily: 'urbanist', useMaterial3: true),
-      home: HomePage(),
+      theme: ThemeData(
+        fontFamily: 'urbanist',
+        useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.blue,
+          brightness: Brightness.light,
+        ),
+      ),
+      home: const HomePage(),
     );
   }
 }
