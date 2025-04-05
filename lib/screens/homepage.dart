@@ -27,48 +27,48 @@ class _HomePageState extends State<HomePage>
     with SingleTickerProviderStateMixin {
   final List<Map<String, String>> destinations = [
     {
-      "image": "assets/images/collegeTour.webp",
+      "image": "assets/images/collegeTour.jpg",
       "title":
           "Explore, learn, and create memories with our South Indian college and school tour packages!",
     },
     {
-      "image": "assets/images/TNtour.webp",
+      "image": "assets/images/TNtour.jpg",
       "title":
           "Explore the heart of South India with our curated travel packages – where every journey is a story and every destination, a dream!",
     },
     {
-      "image": "assets/images/taxi.webp",
+      "image": "assets/images/taxi.png",
       "title":
           "Reliable one-way pickup and drop – hassle-free travel, every time!",
     },
   ];
   final List<Map<String, String>> placesToVisit = [
     {
-      "image": "assets/images/ooty.webp",
+      "image": "assets/images/ooty.jpg",
       "title": "Ooty",
       "description":
           "Ooty's beauty lies in its tranquility, where the hills kiss the sky and nature whispers in your ears.",
     },
     {
-      "image": "assets/images/madurai.webp",
+      "image": "assets/images/madurai.jpeg",
       "title": "Madurai",
       "description":
           "Madurai, where the past meets the present in a symphony of faith, culture, and history.",
     },
     {
-      "image": "assets/images/kanyakumari.webp",
+      "image": "assets/images/kanyakumari.jpg",
       "title": "Kanniyakumari",
       "description":
           "Kanyakumari, where the sun sets and rises at the edge of the world, merging oceans and dreams.",
     },
     {
-      "image": "assets/images/Thanjavur.webp",
+      "image": "assets/images/Thanjavur.jpg",
       "title": "Thanjavur",
       "description":
           "Thanjavur, where ancient temples tell tales of devotion, and art flourishes in every corner.",
     },
     {
-      "image": "assets/images/Kodaikanal.webp",
+      "image": "assets/images/Kodaikanal.jpg",
       "title": "Kodaikanal",
       "description":
           "Kodaikanal, where the clouds dance with the mountains, and nature's beauty whispers peace to the soul.",
@@ -76,35 +76,35 @@ class _HomePageState extends State<HomePage>
   ];
   final List<Map<String, String>> templePackages = [
     {
-      'image': 'assets/images/temples/temple1.webp',
+      'image': 'assets/images/temples/temple1.jpg',
       'title': 'Meenakshi Temple, Madurai',
     },
     {
-      'image': 'assets/images/temples/temple2.webp',
+      'image': 'assets/images/temples/temple2.jpg',
       'title': 'Venkateswara Temple, Tirupati',
     },
     {
-      'image': 'assets/images/temples/temple3.webp',
+      'image': 'assets/images/temples/temple3.jpg',
       'title': 'Ayyappa Temple, Sabarimala',
     },
     {
-      'image': 'assets/images/temples/temple4.webp',
+      'image': 'assets/images/temples/temple4.jpg',
       'title': 'Ramanathaswamy Temple, Rameswaram',
     },
     {
-      'image': 'assets/images/temples/temple5.webp',
+      'image': 'assets/images/temples/temple5.jpg',
       'title': 'Airavatesvara Temple, Kumbakonam',
     },
     {
-      'image': 'assets/images/temples/temple6.webp',
+      'image': 'assets/images/temples/temple6.jpg',
       'title': 'Brihadeshwara Temple, Thanjavur',
     },
     {
-      'image': 'assets/images/temples/temple7.webp',
+      'image': 'assets/images/temples/temple7.jpg',
       'title': 'Suchindram Temple, Kanyakumari',
     },
     {
-      'image': 'assets/images/temples/temple8.webp',
+      'image': 'assets/images/temples/temple8.jpg',
       'title': 'Sri Ranganathaswamy Temple, Srirangapatna',
     },
   ];
@@ -595,7 +595,7 @@ class _HomePageState extends State<HomePage>
             heroTag: "whatsapp",
             backgroundColor: Colors.transparent,
             onPressed: launchWhatsApp,
-            child: Image.asset("assets/images/whatsapp.webp"),
+            child: Image.asset("assets/images/whatsapp.png"),
           ),
           SizedBox(height: 10),
           (isMobile || isTablet)

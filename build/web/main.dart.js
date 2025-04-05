@@ -79930,7 +79930,7 @@ c=A.b([A.aa5(A.bg(A.b([c,new A.bb(new A.af(s,40,s,40),A.bg(A.b([r,B.aE,q,B.aE,p,
 if(h){s=l.f
 s===$&&A.a()
 c.push(new A.qb(l.gj7(),s,j,k))}c=A.eJ(B.aN,c,B.G,B.b0)
-s=A.nD(B.C,A.r7("assets/images/whatsapp.webp",k,k,k),k,"whatsapp_about",k,!1,l.gnn())
+s=A.nD(B.C,A.r7("assets/images/whatsapp.png",k,k,k),k,"whatsapp_about",k,!1,l.gnn())
 return A.a8e(e,f,c,!1,A.bg(A.b([s,B.c_,!b||g?A.nD(B.er,B.fL,k,"call_about",k,!1,l.gnr()):A.bs(k,k,B.n,k,k,k,k,k,k,k,k,k,k)],d),B.bR,B.da,B.r))},
 a0d(a,b){switch(b){case"Home":A.a5A(a,A.h9(new A.acz(),null,t.z),new A.acA())
 break
@@ -80118,7 +80118,7 @@ a7=A.b([A.aa5(A.bg(a7,B.O,B.u,B.r))],a6)
 if(a2){s=i.r
 s===$&&A.a()
 a7.push(new A.qb(i.gj7(),s,g,h))}a7=A.eJ(B.aN,a7,B.G,B.b0)
-s=A.nD(B.C,A.r7("assets/images/whatsapp.webp",h,h,h),h,"whatsapp_contact",h,!1,i.gnn())
+s=A.nD(B.C,A.r7("assets/images/whatsapp.png",h,h,h),h,"whatsapp_contact",h,!1,i.gnn())
 return A.a8e(a5,a4,a7,!1,A.bg(A.b([s,B.c_,!a8||a3?A.nD(B.er,B.fL,h,"call_contact",h,!1,i.gnr()):A.bs(h,h,B.n,h,h,h,h,h,h,h,h,h,h)],a6),B.bR,B.da,B.r))},
 qC(a,b,c,d){var s,r,q=null,p=$.ca()
 p=A.ae(B.c.al(25.5),p.u()>>>16&255,p.u()>>>8&255,p.u()&255)
@@ -80223,7 +80223,7 @@ this.c8()
 this.fu()}}
 A.lu.prototype={
 aj(){var s=t.N,r=t.m0
-return new A.C6(A.b([A.ab(["image","assets/images/collegeTour.webp","title","Explore, learn, and create memories with our South Indian college and school tour packages!"],s,s),A.ab(["image","assets/images/TNtour.webp","title","Explore the heart of South India with our curated travel packages \u2013 where every journey is a story and every destination, a dream!"],s,s),A.ab(["image","assets/images/taxi.webp","title","Reliable one-way pickup and drop \u2013 hassle-free travel, every time!"],s,s)],r),A.b([A.ab(["image","assets/images/ooty.webp","title","Ooty","description","Ooty's beauty lies in its tranquility, where the hills kiss the sky and nature whispers in your ears."],s,s),A.ab(["image","assets/images/madurai.webp","title","Madurai","description","Madurai, where the past meets the present in a symphony of faith, culture, and history."],s,s),A.ab(["image","assets/images/kanyakumari.webp","title","Kanniyakumari","description","Kanyakumari, where the sun sets and rises at the edge of the world, merging oceans and dreams."],s,s),A.ab(["image","assets/images/Thanjavur.webp","title","Thanjavur","description","Thanjavur, where ancient temples tell tales of devotion, and art flourishes in every corner."],s,s),A.ab(["image","assets/images/Kodaikanal.webp","title","Kodaikanal","description","Kodaikanal, where the clouds dance with the mountains, and nature's beauty whispers peace to the soul."],s,s)],r),A.b([A.ab(["image","assets/images/temples/temple1.webp","title","Meenakshi Temple, Madurai"],s,s),A.ab(["image","assets/images/temples/temple2.webp","title","Venkateswara Temple, Tirupati"],s,s),A.ab(["image","assets/images/temples/temple3.webp","title","Ayyappa Temple, Sabarimala"],s,s),A.ab(["image","assets/images/temples/temple4.webp","title","Ramanathaswamy Temple, Rameswaram"],s,s),A.ab(["image","assets/images/temples/temple5.webp","title","Airavatesvara Temple, Kumbakonam"],s,s),A.ab(["image","assets/images/temples/temple6.webp","title","Brihadeshwara Temple, Thanjavur"],s,s),A.ab(["image","assets/images/temples/temple7.webp","title","Suchindram Temple, Kanyakumari"],s,s),A.ab(["image","assets/images/temples/temple8.webp","title","Sri Ranganathaswamy Temple, Srirangapatna"],s,s)],r),null,null)}}
+return new A.C6(A.b([A.ab(["image","assets/images/collegeTour.jpg","title","Explore, learn, and create memories with our South Indian college and school tour packages!"],s,s),A.ab(["image","assets/images/TNtour.jpg","title","Explore the heart of South India with our curated travel packages \u2013 where every journey is a story and every destination, a dream!"],s,s),A.ab(["image","assets/images/taxi.png","title","Reliable one-way pickup and drop \u2013 hassle-free travel, every time!"],s,s)],r),A.b([A.ab(["image","assets/images/ooty.jpg","title","Ooty","description","Ooty's beauty lies in its tranquility, where the hills kiss the sky and nature whispers in your ears."],s,s),A.ab(["image","assets/images/madurai.jpeg","title","Madurai","description","Madurai, where the past meets the present in a symphony of faith, culture, and history."],s,s),A.ab(["image","assets/images/kanyakumari.jpg","title","Kanniyakumari","description","Kanyakumari, where the sun sets and rises at the edge of the world, merging oceans and dreams."],s,s),A.ab(["image","assets/images/Thanjavur.jpg","title","Thanjavur","description","Thanjavur, where ancient temples tell tales of devotion, and art flourishes in every corner."],s,s),A.ab(["image","assets/images/Kodaikanal.jpg","title","Kodaikanal","description","Kodaikanal, where the clouds dance with the mountains, and nature's beauty whispers peace to the soul."],s,s)],r),A.b([A.ab(["image","assets/images/temples/temple1.jpg","title","Meenakshi Temple, Madurai"],s,s),A.ab(["image","assets/images/temples/temple2.jpg","title","Venkateswara Temple, Tirupati"],s,s),A.ab(["image","assets/images/temples/temple3.jpg","title","Ayyappa Temple, Sabarimala"],s,s),A.ab(["image","assets/images/temples/temple4.jpg","title","Ramanathaswamy Temple, Rameswaram"],s,s),A.ab(["image","assets/images/temples/temple5.jpg","title","Airavatesvara Temple, Kumbakonam"],s,s),A.ab(["image","assets/images/temples/temple6.jpg","title","Brihadeshwara Temple, Thanjavur"],s,s),A.ab(["image","assets/images/temples/temple7.jpg","title","Suchindram Temple, Kanyakumari"],s,s),A.ab(["image","assets/images/temples/temple8.jpg","title","Sri Ranganathaswamy Temple, Srirangapatna"],s,s)],r),null,null)}}
 A.C6.prototype={
 ar(){var s,r=this,q=null
 r.aN()
@@ -80313,7 +80313,7 @@ f=$.bv()
 f=A.b([A.aa5(A.bg(A.b([a5,s,new A.bb(new A.af(r,0,r,0),p,d),B.MN,new A.bb(new A.af(o,0,o,0),n,d),B.aE,new A.bb(new A.af(m,0,m,0),l,d),B.aE,new A.bb(new A.af(k,0,k,0),j,d),B.aE,new A.bb(new A.af(q,0,q,0),i,d),B.aE,new A.bb(new A.af(c,0,c,0),A.bg(A.b([h,g,A.at("\u2705 Customized Holiday Planning \u2013 Tailored itineraries based on your time and budget.",d,d,d,f,d,d),A.at("\u2705 Airport/Railway Station Transfers \u2013 Hassle-free pick-up and drop-off.",d,d,d,f,d,d),A.at("\u2705 Accommodation Arrangements \u2013 Hotels, resorts, and houseboats to suit your preferences.",d,d,d,f,d,d),A.at("\u2705 Cultural Experiences \u2013 Traditional performances and sightseeing tours.",d,d,d,f,d,d),A.at("\u2705 Comfortable Transportation \u2013 A wide range of vehicles with professional and courteous drivers.",d,d,d,f,d,d),A.at("\u2705 Call/Acting Driver Services \u2013 Available for flexible travel needs.",d,d,d,f,d,d),A.at("From the moment you arrive until your departure, we ensure a smooth and enjoyable journey.",d,d,d,f,d,d),B.aE,B.Sb],a4),B.D,B.t8,B.r),d),B.jb],a4),B.D,B.u,B.r))],a4)
 if(a0)f.push(e.aec())
 c=A.eJ(B.aN,f,B.G,B.b0)
-a5=A.nD(B.C,A.r7("assets/images/whatsapp.webp",d,d,d),d,"whatsapp",d,!1,e.gnn())
+a5=A.nD(B.C,A.r7("assets/images/whatsapp.png",d,d,d),d,"whatsapp",d,!1,e.gnn())
 s=A.ep(d,10,d)
 return A.a8e(a3,a2,c,!1,A.bg(A.b([a5,s,!a6||a1?A.nD(B.er,B.fL,d,"call",d,!1,e.gnr()):A.bs(d,d,B.n,d,d,d,d,d,d,d,d,d,d)],a4),B.bR,B.da,B.r))},
 Qw(a,b,c,d){var s,r,q,p,o,n,m,l,k,j=this,i=null
@@ -80516,7 +80516,7 @@ m=A.b([A.aa5(A.bg(A.b([c,new A.bb(B.iU,A.bg(A.b([s,B.a4,r,B.aE,p,B.aE,o,B.aE,q,B
 if(g){c=l.e
 c===$&&A.a()
 m.push(new A.qb(l.gj7(),c,j,k))}c=A.eJ(B.aN,m,B.G,B.b0)
-s=A.nD(B.C,A.r7("assets/images/whatsapp.webp",k,k,k),k,"whatsapp_student",k,!1,new A.ak9())
+s=A.nD(B.C,A.r7("assets/images/whatsapp.png",k,k,k),k,"whatsapp_student",k,!1,new A.ak9())
 return A.a8e(e,k,c,!1,A.bg(A.b([s,B.c_,g||f?A.nD(B.er,B.fL,k,"call_student",k,!1,new A.aka()):A.bs(k,k,B.n,k,k,k,k,k,k,k,k,k,k)],d),B.bR,B.da,B.r))},
 AQ(a,b,c,d){var s,r=null,q=$.cb(),p=A.cD(15),o=$.hF()
 o=A.b([new A.ct(2,B.bd,A.ae(B.c.al(25.5),o.u()>>>16&255,o.u()>>>8&255,o.u()&255),B.e,10)],t.F)

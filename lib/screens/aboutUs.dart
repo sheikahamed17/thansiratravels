@@ -324,7 +324,7 @@ class _AboutusState extends State<Aboutus> with SingleTickerProviderStateMixin {
             heroTag: "whatsapp_about",
             backgroundColor: Colors.transparent,
             onPressed: launchWhatsApp,
-            child: Image.asset("assets/images/whatsapp.webp"),
+            child: Image.asset("assets/images/whatsapp.png"),
           ),
           const SizedBox(height: 10),
           (isMobile || isTablet)

@@ -513,7 +513,7 @@ ${_messageController.text}
             heroTag: "whatsapp_contact",
             backgroundColor: Colors.transparent,
             onPressed: launchWhatsApp,
-            child: Image.asset("assets/images/whatsapp.webp"),
+            child: Image.asset("assets/images/whatsapp.png"),
           ),
           const SizedBox(height: 10),
           (isMobile || isTablet)
