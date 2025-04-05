@@ -1,8 +1,7 @@
 {
     "name": "thansira_travels",
     "short_name": "thansira_travels",
-    "start_url": "/",
-    "scope": "/",
+    "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
