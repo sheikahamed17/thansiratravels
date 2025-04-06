@@ -1,0 +1,7 @@
+# Flutter Web routing
+/*    /index.html   200
+
+# Don't rewrite requests for real files like images
+/assets/*  /assets/:splat  200
+/icons/*   /icons/:splat   200
+/favicon.png /favicon.png 200 
