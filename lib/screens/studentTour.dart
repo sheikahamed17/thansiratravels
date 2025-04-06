@@ -111,7 +111,7 @@ class _StudentTourState extends State<StudentTour>
                   height: 300,
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: NetworkImage("assets/images/studentTour.jpg"),
+                      image: AssetImage("assets/images/studentTour.jpg"),
                       fit: BoxFit.cover,
                     ),
                   ),

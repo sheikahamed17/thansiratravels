@@ -40,18 +40,11 @@ Widget buildPlaceCard(
           borderRadius: BorderRadius.circular(12),
           child: ClipRRect(
             borderRadius: BorderRadius.circular(10),
-            child: Image.network(
+            child: Image.asset(
               place["image"]!,
               width: double.infinity,
               height: MediaQuery.of(context).size.height / 1.5,
               fit: BoxFit.cover,
-              loadingBuilder: (context, child, loadingProgress) {
-                if (loadingProgress == null) return child;
-                return Container(
-                  color: Colors.grey[300],
-                  child: const Center(child: CircularProgressIndicator()),
-                );
-              },
               errorBuilder: (context, error, stackTrace) {
                 print("Error loading image: $error");
                 return Container(

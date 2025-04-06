@@ -16,17 +16,10 @@ Widget buildTempleTourCard(Map<String, String> temple) {
             borderRadius: const BorderRadius.vertical(top: Radius.circular(12)),
             child: ClipRRect(
               borderRadius: BorderRadius.circular(10),
-              child: Image.network(
+              child: Image.asset(
                 temple['image']!,
                 fit: BoxFit.cover,
                 width: double.infinity,
-                loadingBuilder: (context, child, loadingProgress) {
-                  if (loadingProgress == null) return child;
-                  return Container(
-                    color: Colors.grey[300],
-                    child: const Center(child: CircularProgressIndicator()),
-                  );
-                },
                 errorBuilder: (context, error, stackTrace) {
                   print("Error loading image: $error");
                   return Container(
