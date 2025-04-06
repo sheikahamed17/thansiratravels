@@ -10,19 +10,112 @@
 /index.html
   Cache-Control: public, max-age=0, must-revalidate
 
-/*.js
+/assets/*.jpg
+  Content-Type: image/jpeg
   Cache-Control: public, max-age=31536000, immutable
 
-/*.css
+/assets/*.jpeg
+  Content-Type: image/jpeg
   Cache-Control: public, max-age=31536000, immutable
 
-/*.png
+/assets/*.png
+  Content-Type: image/png
   Cache-Control: public, max-age=31536000, immutable
 
-/*.jpg
+/assets/*.webp
+  Content-Type: image/webp
   Cache-Control: public, max-age=31536000, immutable
 
-/*.ico
+/assets/*.svg
+  Content-Type: image/svg+xml
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/*.ico
+  Content-Type: image/x-icon
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/*.gif
+  Content-Type: image/gif
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/*.js
+  Content-Type: application/javascript
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/*.css
+  Content-Type: text/css
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/*.woff
+  Content-Type: font/woff
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/*.woff2
+  Content-Type: font/woff2
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/*.ttf
+  Content-Type: font/ttf
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/*.otf
+  Content-Type: font/otf
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/*.eot
+  Content-Type: application/vnd.ms-fontobject
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/*.json
+  Content-Type: application/json
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/*.xml
+  Content-Type: application/xml
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/*.txt
+  Content-Type: text/plain
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/*.html
+  Content-Type: text/html
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/*.pdf
+  Content-Type: application/pdf
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/*.zip
+  Content-Type: application/zip
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/*.gz
+  Content-Type: application/gzip
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/*.mp4
+  Content-Type: video/mp4
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/*.webm
+  Content-Type: video/webm
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/*.ogg
+  Content-Type: video/ogg
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/*.mp3
+  Content-Type: audio/mpeg
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/*.wav
+  Content-Type: audio/wav
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/*.m4a
+  Content-Type: audio/mp4
   Cache-Control: public, max-age=31536000, immutable
 
 /manifest.json
