@@ -652,19 +652,47 @@ class _HomePageState extends State<HomePage>
                 child: Image.network(
                   destination["image"]!,
                   fit: BoxFit.fill,
+                  headers: {
+                    'Accept': 'image/jpeg,image/png,image/webp,image/*',
+                  },
                   loadingBuilder: (context, child, loadingProgress) {
                     if (loadingProgress == null) return child;
                     return Container(
                       color: Colors.grey[300],
-                      child: const Center(child: CircularProgressIndicator()),
+                      child: Center(
+                        child: CircularProgressIndicator(
+                          value:
+                              loadingProgress.expectedTotalBytes != null
+                                  ? loadingProgress.cumulativeBytesLoaded /
+                                      loadingProgress.expectedTotalBytes!
+                                  : null,
+                        ),
+                      ),
                     );
                   },
                   errorBuilder: (context, error, stackTrace) {
                     print("Error loading image: $error");
                     return Container(
                       color: Colors.grey[300],
-                      child: const Center(
-                        child: Icon(Icons.error, color: Colors.red, size: 50),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          const Icon(Icons.error, color: Colors.red, size: 50),
+                          const SizedBox(height: 10),
+                          Text(
+                            'Failed to load image',
+                            style: TextStyle(color: Colors.grey[700]),
+                          ),
+                          const SizedBox(height: 10),
+                          ElevatedButton(
+                            onPressed: () {
+                              setState(
+                                () {},
+                              ); // Trigger rebuild to retry loading
+                            },
+                            child: const Text('Retry'),
+                          ),
+                        ],
                       ),
                     );
                   },

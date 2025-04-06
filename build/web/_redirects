@@ -5,12 +5,19 @@
 /tours      /index.html    200
 /student-tours /index.html 200
 
-# Static assets and resources
+# Static assets and resources with proper MIME types
 /assets/*   /assets/:splat 200
 /fonts/*    /fonts/:splat  200
 /images/*   /images/:splat 200
 /css/*      /css/:splat    200
 /js/*       /js/:splat     200
+
+# Image MIME types
+*.jpg       /:splat   200  Content-Type: image/jpeg
+*.jpeg      /:splat   200  Content-Type: image/jpeg
+*.png       /:splat   200  Content-Type: image/png
+*.webp      /:splat   200  Content-Type: image/webp
+*.svg       /:splat   200  Content-Type: image/svg+xml
 
 # Essential files
 /favicon.ico    /favicon.ico    200
