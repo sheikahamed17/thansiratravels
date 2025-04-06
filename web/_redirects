@@ -16,27 +16,23 @@
 # Handle fonts
 /fonts/* /fonts/:splat 200
 
-# Handle images
-/images/* /images/:splat 200
-
-# Handle 404 errors
-/* /index.html 404
-
-# Image MIME types
-*.jpg       /:splat   200  Content-Type: image/jpeg
-*.jpeg      /:splat   200  Content-Type: image/jpeg
-*.png       /:splat   200  Content-Type: image/png
-*.webp      /:splat   200  Content-Type: image/webp
-*.svg       /:splat   200  Content-Type: image/svg+xml
+# Handle images with proper MIME types
+/assets/images/*.jpg /assets/images/:splat 200
+/assets/images/*.jpeg /assets/images/:splat 200
+/assets/images/*.png /assets/images/:splat 200
+/assets/images/*.webp /assets/images/:splat 200
+/assets/images/*.svg /assets/images/:splat 200
+/assets/images/*.ico /assets/images/:splat 200
+/assets/images/*.gif /assets/images/:splat 200
 
 # Essential files
-/favicon.ico    /favicon.ico    200
-/robots.txt     /robots.txt     200
-/sitemap.xml    /sitemap.xml    200
+/favicon.ico /favicon.ico 200
+/robots.txt /robots.txt 200
+/sitemap.xml /sitemap.xml 200
 
 # Error pages
-/404.html   /404.html   404
-/500.html   /500.html   500
+/404.html /404.html 404
+/500.html /500.html 500
 
 # Prevent directory listing
-/*/         /index.html 200
+/*/ /index.html 200
