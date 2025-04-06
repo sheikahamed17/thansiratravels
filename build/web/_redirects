@@ -1,16 +1,26 @@
 # Main website routing
-/           /index.html    200
-/about      /index.html    200
-/contact    /index.html    200
-/tours      /index.html    200
-/student-tours /index.html 200
+/* /index.html 200
 
-# Static assets and resources with proper MIME types
-/assets/*   /assets/:splat 200
-/fonts/*    /fonts/:splat  200
-/images/*   /images/:splat 200
-/css/*      /css/:splat    200
-/js/*       /js/:splat     200
+# Handle static assets
+/assets/* /assets/:splat 200
+
+# Handle service worker
+/service-worker.js /service-worker.js 200
+
+# Handle manifest
+/manifest.json /manifest.json 200
+
+# Handle icons
+/icons/* /icons/:splat 200
+
+# Handle fonts
+/fonts/* /fonts/:splat 200
+
+# Handle images
+/images/* /images/:splat 200
+
+# Handle 404 errors
+/* /index.html 404
 
 # Image MIME types
 *.jpg       /:splat   200  Content-Type: image/jpeg
@@ -23,7 +33,6 @@
 /favicon.ico    /favicon.ico    200
 /robots.txt     /robots.txt     200
 /sitemap.xml    /sitemap.xml    200
-/manifest.json  /manifest.json  200
 
 # Error pages
 /404.html   /404.html   404
