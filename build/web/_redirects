@@ -1,7 +1,13 @@
-# Flutter Web routing
-/*    /index.html   200
+# Flutter Web routing (ensures index.html loads for all app routes)
+/*      /index.html    200
 
-# Don't rewrite requests for real files like images
-/assets/*  /assets/:splat  200
-/icons/*   /icons/:splat   200
-/favicon.png /favicon.png 200 
+# Allow access to Flutter asset folders
+/assets/*       /assets/:splat       200
+/fonts/*        /fonts/:splat        200
+/images/*       /images/:splat       200
+
+# Specific files like favicon, manifest, etc.
+favicon.png     /favicon.png         200
+manifest.json   /manifest.json       200
+flutter.js      /flutter.js          200
+main.dart.js    /main.dart.js        200
