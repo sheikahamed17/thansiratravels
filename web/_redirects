@@ -16,7 +16,7 @@
 # Handle fonts
 /fonts/* /fonts/:splat 200
 
-# Handle images with proper MIME types
+# Handle images with proper MIME types and iOS support
 /assets/images/*.jpg /assets/images/:splat 200
 /assets/images/*.jpeg /assets/images/:splat 200
 /assets/images/*.png /assets/images/:splat 200
@@ -36,3 +36,6 @@
 
 # Prevent directory listing
 /*/ /index.html 200
+
+# iOS specific image handling
+/assets/images/* /assets/images/:splat 200
