@@ -24,6 +24,7 @@ class BuildPlaceCard extends StatefulWidget {
 class _BuildPlaceCardState extends State<BuildPlaceCard> {
   bool _isLoading = true;
   bool _hasError = false;
+  ImageProvider? _imageProvider;
 
   @override
   void initState() {
@@ -33,8 +34,12 @@ class _BuildPlaceCardState extends State<BuildPlaceCard> {
 
   Future<void> _loadImage() async {
     try {
+      // Create the image provider
+      _imageProvider = AssetImage(widget.place.imageUrl);
+
       // Pre-cache the image
-      await precacheImage(AssetImage(widget.place.imageUrl), context);
+      await precacheImage(_imageProvider!, context);
+
       if (mounted) {
         setState(() {
           _isLoading = false;
@@ -48,6 +53,14 @@ class _BuildPlaceCardState extends State<BuildPlaceCard> {
           _hasError = true;
         });
       }
+    }
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    if (_imageProvider != null) {
+      precacheImage(_imageProvider!, context);
     }
   }
 
@@ -107,8 +120,8 @@ class _BuildPlaceCardState extends State<BuildPlaceCard> {
                             ),
                           ),
                         )
-                        : Image.asset(
-                          widget.place.imageUrl,
+                        : Image(
+                          image: _imageProvider!,
                           fit: BoxFit.cover,
                           width: double.infinity,
                           height: double.infinity,

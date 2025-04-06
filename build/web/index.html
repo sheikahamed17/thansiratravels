@@ -66,9 +66,17 @@
 </head>
 <body>
   <script>
+    // Initialize Flutter build configuration
+    window._flutter = {
+      buildConfig: {
+        baseUrl: "/",
+        entrypoint: "main.dart.js",
+        serviceWorkerVersion: serviceWorkerVersion,
+      }
+    };
     window.addEventListener('load', function(ev) {
       // Download main.dart.js
-      _flutter.loader.loadEntrypoint({
+      _flutter.loader.load({
         serviceWorker: {
           serviceWorkerVersion: serviceWorkerVersion,
         },
