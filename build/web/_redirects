@@ -1,13 +1,26 @@
-# Flutter Web routing (ensures index.html loads for all app routes)
-/*      /index.html    200
+# Main website routing
+/           /index.html    200
+/about      /index.html    200
+/contact    /index.html    200
+/tours      /index.html    200
+/student-tours /index.html 200
 
-# Allow access to Flutter asset folders
-/assets/*       /assets/:splat       200
-/fonts/*        /fonts/:splat        200
-/images/*       /images/:splat       200
+# Static assets and resources
+/assets/*   /assets/:splat 200
+/fonts/*    /fonts/:splat  200
+/images/*   /images/:splat 200
+/css/*      /css/:splat    200
+/js/*       /js/:splat     200
 
-# Specific files like favicon, manifest, etc.
-favicon.png     /favicon.png         200
-manifest.json   /manifest.json       200
-flutter.js      /flutter.js          200
-main.dart.js    /main.dart.js        200
+# Essential files
+/favicon.ico    /favicon.ico    200
+/robots.txt     /robots.txt     200
+/sitemap.xml    /sitemap.xml    200
+/manifest.json  /manifest.json  200
+
+# Error pages
+/404.html   /404.html   404
+/500.html   /500.html   500
+
+# Prevent directory listing
+/*/         /index.html 200
