@@ -116,7 +116,7 @@ class FooterSection extends StatelessWidget {
                   child: Padding(
                     padding: const EdgeInsets.only(right: 12),
                     child: Image.asset(
-                      'assets/images/social/$icon.webp',
+                      'assets/images/social/$icon.png',
                       height: 50,
                     ),
                   ),

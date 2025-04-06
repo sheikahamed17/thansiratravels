@@ -3,7 +3,6 @@ import 'package:url_launcher/url_launcher.dart'
     show LaunchMode, canLaunchUrl, launchUrl;
 import 'package:thansira_travels/core/theme/colors.dart';
 import 'package:thansira_travels/core/theme/text_styles.dart';
-import 'package:thansira_travels/core/theme/constants.dart';
 import '../core/widgets/app_drawer.dart';
 import 'homepage.dart';
 import 'aboutUs.dart';
@@ -112,9 +111,7 @@ class _StudentTourState extends State<StudentTour>
                   height: 300,
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: NetworkImage(
-                        "https://firebasestorage.googleapis.com/v0/b/fitadvisor-flutter.appspot.com/o/collegeTour.webp?alt=media&token=674a2539-dbc0-41b2-8e10-fc68925e3f0b",
-                      ),
+                      image: NetworkImage("assets/images/studentTour.jpg"),
                       fit: BoxFit.cover,
                     ),
                   ),

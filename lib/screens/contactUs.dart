@@ -240,9 +240,7 @@ ${_messageController.text}
                   height: 300,
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: NetworkImage(
-                        "https://firebasestorage.googleapis.com/v0/b/fitadvisor-flutter.appspot.com/o/collegeTour.webp?alt=media&token=674a2539-dbc0-41b2-8e10-fc68925e3f0b",
-                      ),
+                      image: AssetImage('assets/images/TNtour.jpg'),
                       fit: BoxFit.cover,
                     ),
                   ),

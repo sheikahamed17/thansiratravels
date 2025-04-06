@@ -8,25 +8,25 @@ class TourTypesSection extends StatelessWidget {
 
   final List<Map<String, String>> tourTypes = const [
     {
-      'image': 'assets/images/studentTour.webp',
+      'image': 'assets/images/studentTour.jpg',
       'title': 'Student Tours',
       'description':
           'Vacation in India in itself is a great experience, and when it is accompanied by some theme, We offer you an enthusiastic, excitement filled trip for students & youths to know the beauty of our country.',
     },
     {
-      'image': 'assets/images/honeymoon.webp',
+      'image': 'assets/images/honeymoon.jpg',
       'title': 'Honeymoon Tours',
       'description':
           'Are you delighted for your honeymoon vacation? This is one such escape you will treasure for the rest of your life. It is a once in a lifetime opportunity to have fun and give a good start to your love and romantic life.',
     },
     {
-      'image': 'assets/images/navatirupathi.webp',
+      'image': 'assets/images/navatirupathi.jpg',
       'title': 'Navatirupati Tours',
       'description':
           'Nava Tirupathi is a set of 9 temples of Lord Vishnu located between Tirunelveli and Tiruchendur in the southern Indian state of Tamilnadu. Nava Tirupathi is part of the 108 Divya Desam temples revered',
     },
     {
-      'image': 'assets/images/grouptour.webp',
+      'image': 'assets/images/grouptour.jpg',
       'title': 'Group Tours',
       'description':
           'Considered among the most popular types of travel, group tours have gained a lot of famee. If you have been meaning to go on a group trip with your friends but hate to be the one to make all the plans, a well-priced',
